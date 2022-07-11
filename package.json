@@ -1,0 +1,21 @@
+{
+  "name": "b-evenement",
+  "version": "1.0.0",
+  "description": "B-Evenement Services événementiels",
+  "main": "index.js",
+  "scripts": {
+    "dev": "postcss ./src/input.css -o ./dist/output.css --watch",
+    "minify": "npx tailwind -o ./dist/minified.css --minify"
+  },
+  "keywords": [],
+  "author": "DE JESUS PIMENTA Guyliane",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.3"
+  },
+  "dependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.0"
+  }
+}
