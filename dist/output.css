@@ -913,8 +913,8 @@ video {
 .pt-40 {
   padding-top: 10rem;
 }
-.pb-56 {
-  padding-bottom: 14rem;
+.pb-72 {
+  padding-bottom: 18rem;
 }
 .pb-32 {
   padding-bottom: 8rem;
@@ -928,11 +928,11 @@ video {
 .pb-5 {
   padding-bottom: 1.25rem;
 }
+.pb-56 {
+  padding-bottom: 14rem;
+}
 .pt-7 {
   padding-top: 1.75rem;
-}
-.pb-64 {
-  padding-bottom: 16rem;
 }
 .text-left {
   text-align: left;
@@ -1196,10 +1196,6 @@ video {
   .sm\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-  }
-
-  .sm\:pb-72 {
-    padding-bottom: 18rem;
   }
 
   .sm\:pb-80 {
