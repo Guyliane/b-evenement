@@ -3,10 +3,19 @@
 const menuElementsToToggle = document.querySelectorAll(".toggle-menu");
 const iconeToggle = document.querySelector(".icone-toggle");
 
+const navmenup = document.querySelector(".navmenuApropos");
+const navmenur = document.querySelector(".navmenuReal");
+const navmenupr = document.querySelector(".navmenuPres");
+const navmenuco = document.querySelector(".navmenuContact");
+
 const toggleMenu = () =>
   menuElementsToToggle.forEach((el) => el.classList.toggle("hidden"));
 
 iconeToggle.addEventListener("click", toggleMenu);
+navmenup.addEventListener("click", toggleMenu);
+navmenur.addEventListener("click", toggleMenu);
+navmenupr.addEventListener("click", toggleMenu);
+navmenuco.addEventListener("click", toggleMenu);
 
 // ---------------------------------------
 
