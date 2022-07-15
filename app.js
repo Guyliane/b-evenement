@@ -29,7 +29,7 @@ gsap.from(logoHome, { y: 450, duration: 1 });
 gsap.from(realisations, {
   y: 250,
   scrollTrigger: realisations,
-  duration: 1,
+  duration: 3,
   stagger: 0.1,
 });
 // ------------------------------------------
