@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/swiper-bundle.min.css" />
     <link rel="stylesheet" href="dist/output.css"/>
     <title>B.Evenement</title>
   </head>
@@ -129,7 +130,7 @@
 
 <!-- #region Nos réalisations -->
     <section id="realisations" class="max-w-7xl mx-auto px-4 py-10">
-        <p class="mb-5 font-['Amatic_SC'] text-5xl">
+        <p class="mb-5 font-['Amatic_SC'] text-5xl text-right">
             Nos Réalisations
         </p>
 
@@ -140,9 +141,8 @@
                 <img src="./ressources/rea1-opti.webp" alt="Photo d'une réalisation" class="h-80 w-full object-cover">
                 <div class="p-4">
          
-                  <div class="flex justify-between">
-                    <p>Pinky Mug</p>
-                    <p>12$</p>
+                  <div class="flex justify-start">
+                    <p class="font-['Amatic_SC'] font-bold text-xl">Arche de ballons</p>
                   </div>
                 </div>
             </div>
@@ -151,9 +151,8 @@
                 <img src="./ressources/rea2-opti.webp" alt="Photo d'une réalisation" class="h-80 w-full object-cover">
                 <div class="p-4">
          
-                  <div class="flex justify-between">
-                    <p>Pinky Mug</p>
-                    <p>12$</p>
+                  <div class="flex justify-start">
+                    <p class="font-['Amatic_SC'] font-bold text-xl">Décoration personalisé</p>
                   </div>
                 </div>
             </div>
@@ -162,64 +161,18 @@
                 <img src="./ressources/rea3-opti.webp" alt="Photo d'une réalisation" class="h-80 w-full object-cover">
                 <div class="p-4">
          
-                  <div class="flex justify-between">
-                    <p>Pinky Mug</p>
-                    <p>12$</p>
+                  <div class="flex justify-start">
+                    <p class="font-['Amatic_SC'] font-bold text-xl">Arche de ballons</p>
                   </div>
                 </div>
             </div>
 
             <div class="shadow-lg realisations">
-                <img src="./ressources/rea4-opti.webp" alt="Photo d'une réalisation" class="h-80 w-full object-cover">
+                <img src="./ressources/safarie-opti.webp" alt="Photo d'une réalisation" class="h-80 w-full object-cover">
                 <div class="p-4">
          
-                  <div class="flex justify-between">
-                    <p>Pinky Mug</p>
-                    <p>12$</p>
-                  </div>
-                </div>
-            </div>
-
-            <div class="shadow-lg realisations">
-                <img src="./ressources/rea1-opti.webp" alt="Photo d'une réalisation" class="h-80 w-full object-cover">
-                <div class="p-4">
-         
-                  <div class="flex justify-between">
-                    <p>Pinky Mug</p>
-                    <p>12$</p>
-                  </div>
-                </div>
-            </div>
-
-            <div class="shadow-lg realisations">
-                <img src="./ressources/rea2-opti.webp" alt="Photo d'une réalisation" class="h-80 w-full object-cover">
-                <div class="p-4">
-         
-                  <div class="flex justify-between">
-                    <p>Pinky Mug</p>
-                    <p>12$</p>
-                  </div>
-                </div>
-            </div>
-
-            <div class="shadow-lg realisations">
-                <img src="./ressources/rea3-opti.webp" alt="Photo d'une réalisation" class="h-80 w-full object-cover">
-                <div class="p-4">
-         
-                  <div class="flex justify-between">
-                    <p>Pinky Mug</p>
-                    <p>12$</p>
-                  </div>
-                </div>
-            </div>
-
-            <div class="shadow-lg realisations">
-                <img src="./ressources/rea4-opti.webp" alt="Photo d'une réalisation" class="h-80 w-full object-cover">
-                <div class="p-4">
-         
-                  <div class="flex justify-between">
-                    <p>Pinky Mug</p>
-                    <p>12$</p>
+                  <div class="flex justify-start">
+                    <p class="font-['Amatic_SC'] font-bold text-xl">Décoration thème safarie</p>
                   </div>
                 </div>
             </div>
@@ -230,88 +183,316 @@
     </section>
 <!-- #endregion -->
 
-<!-- #region Nos prestations -->
-
-    <div class="relative">
-        <img src="./ressources/ruban-bg.webp" alt="Illustration d'un ruban" class="absolute w-full object-cover top-0 z-0 overflow-hidden">
-    </div>
-    <section id="prestations" class="max-w-7xl mx-auto px-4 py-10 z-20">
-        <p class="text-right mb-5 font-['Amatic_SC'] text-5xl z-10 relative">
-            Nos Préstations
-        </p>
-
-        <!-- CONTAINER POUR LES CARTES AVEC FLEXBOX -->
-      <div class="mt-8 flex justify-center items-center flex-col md:flex-row md:flex-wrap">
- 
-        <!-- #region CARTES -->
-        <!-- CARTE-->
-        <div class="min-h-[450px] w-80 flex flex-col shadow-md rounded-lg mt-7 mx-4 px-6 py-4 text-left bg-lime-200 z-40 transition duration-300 ease-in-out hover:-translate-y-3">
- 
+<!-- #region Nos préstations Slider -->
+<div class="relative">
+  <img src="./ressources/ruban-bg.webp" alt="Illustration d'un ruban" class="absolute w-full object-cover top-0 z-0 overflow-hidden">
+</div>
+<section id="prestations" class="max-w-7xl mx-auto px-4 py-10 z-20">
+  <p class="text-left font-['Amatic_SC'] mt-20 text-5xl z-10 relative">
+      Nos Préstations
+  </p>
+  <p class="text-left text-2xl font-['Amatic_SC']">Parcourez nos services en location pour vos événements.</p>
+    <!-- Swiper -->
+    <div class="max-w-7xl px-6  swiper mySwiper">
+      <div class="swiper-wrapper mt-8 mb-8">
+        <!-- #region CARD -->
+        <div
+          class="swiper-slide min-h-[450px] flex flex-col shadow-md rounded-lg mt-7 px-6 py-4 text-left bg-lime-200"
+        >
           <!-- CARTE PART HAUT-->
           <div class="mb-5">
             <h2 class="text-2xl font-bold text-gray-900">Le PHOTOBOOTH</h2>
             <p class="text-md text-gray-800">Locations</p>
             <p class="mt-2">
-              <span class="text-4xl font-extrabold">12€</span>
-              <span class="font-medium text-black">/month</span>
+              <span class="text-4xl font-extrabold">300€</span>
+              <span class="font-medium text-black">/day</span>
             </p>
-            <p class="text-xs font-medium text-gray-900 tracking-wide uppercase">Included :</p>
+            <p
+              class="text-xs font-medium text-gray-900 tracking-wide uppercase"
+            >
+              Included :
+            </p>
           </div>
- 
-          <!-- CARTE PART BAS-->
-          <div class="flex flex-grow flex-col">
-            <img src="./ressources/photobooth-opti.webp" alt="Photo du Photobooth" class="h-[320px] w-[272px] object-cover rounded">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, praesentium quasi minus est totam necessitatibus sunt quidem eius fuga autem?</p>
-          </div>
- 
-        </div>
 
-        <div class="min-h-[450px] w-80 flex flex-col shadow-md rounded-lg mt-7 mx-4 px-6 py-4 text-left bg-pink-200 transition duration-300 ease-in-out hover:-translate-y-3">
- 
+          <!-- CARTE PART BAS-->
+          <div class="flex flex-grow flex-col items-center">
+            <img
+              src="./ressources/photobooth.webp"
+              alt="Photo du Photobooth"
+              class="h-[320px] w-[272px] object-cover rounded"
+            />
+            <p class="mt-2">
+              Le Photobooth, l'activité la plus tendance qui va divertir vos
+              invités pour tous les événements. Ils repartiront avec des
+              souvenirs de votre journée. Personnalisé le Photobooth avec un
+              cadre : thème et écriture de votre choix.
+            </p>
+          </div>
+        </div>
+        <!-- #endregion -->
+
+        <!-- #region CARD -->
+        <div
+          class="swiper-slide min-h-[450px] flex flex-col shadow-md rounded-lg mt-7 px-6 py-4 text-left bg-pink-200"
+        >
           <!-- CARTE PART HAUT-->
           <div class="mb-5">
-            <h2 class="text-2xl font-bold text-gray-900">Housse de chaises</h2>
+            <h2 class="text-2xl font-bold text-gray-900">Arche ronde</h2>
             <p class="text-md text-gray-800">Locations</p>
             <p class="mt-2">
-              <span class="text-4xl font-extrabold">12€</span>
-              <span class="font-medium text-black">/month</span>
+              <span class="text-4xl font-extrabold">30€</span>
+              <span class="font-medium text-black">/day</span>
             </p>
-            <p class="text-xs font-medium text-gray-900 tracking-wide uppercase">Included :</p>
+            <p
+              class="text-xs font-medium text-gray-900 tracking-wide uppercase"
+            >
+              Included :
+            </p>
           </div>
- 
+
           <!-- CARTE PART BAS-->
-          <div class="flex flex-grow flex-col">
-            <img src="./ressources/house-opti.webp" alt="Photo des housses de chaises" class="h-[320px] w-[272px] object-cover rounded">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, praesentium quasi minus est totam necessitatibus sunt quidem eius fuga autem?</p>
+          <div class="flex flex-grow flex-col items-center">
+            <img
+              src="./ressources/arche.webp"
+              alt="Photo du Photobooth"
+              class="h-[320px] w-[272px] object-cover rounded"
+            />
+            <p class="mt-2">
+              L'arche ronde est parfaite pour réaliser de magnifique décoration
+              personnalisé. Elle peut-être personnalisé à l'aide de fleurs, de
+              ballon ou vos propres réalisations. <br />
+              Dimension : 2m
+            </p>
           </div>
         </div>
-
-         <!-- CARTE-->
-         <div class="min-h-[450px] w-80 flex flex-col shadow-md rounded-lg mt-7 mx-4 px-6 py-4 text-left bg-cyan-200 z-40 transition duration-300 ease-in-out hover:-translate-y-3">
- 
-            <!-- CARTE PART HAUT-->
-            <div class="mb-5">
-              <h2 class="text-2xl font-bold text-gray-900">Les Chaises</h2>
-              <p class="text-md text-gray-800">Locations</p>
-              <p class="mt-2">
-                <span class="text-4xl font-extrabold">12€</span>
-                <span class="font-medium text-black">/month</span>
-              </p>
-              <p class="text-xs font-medium text-gray-900 tracking-wide uppercase">Included :</p>
-            </div>
-   
-            <!-- CARTE PART BAS-->
-            <div class="flex flex-grow flex-col">
-              <img src="./ressources/chaises-opti.webp" alt="Photo de chaise" class="h-[320px] w-[272px] object-cover rounded">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, praesentium quasi minus est totam necessitatibus sunt quidem eius fuga autem?</p>
-            </div>
-          </div>
         <!-- #endregion -->
-    </section>
-    <div class="relative">
-        <img src="./ressources/chaise-bg.webp" alt="Illustration de chaises" class="absolute inline-block w-full object-cover bottom-0 z-0 overflow-hidden">
-    </div>
 
+        <!-- #region CARD -->
+        <div
+          class="swiper-slide min-h-[450px] w-80 flex flex-col shadow-md rounded-lg mt-7 px-6 py-4 text-left bg-cyan-200"
+        >
+          <!-- CARTE PART HAUT-->
+          <div class="mb-5">
+            <h2 class="text-2xl font-bold text-gray-900">
+              Chaises Pliantes Blanches
+            </h2>
+            <p class="text-md text-gray-800">Locations</p>
+            <p class="mt-2">
+              <span class="text-4xl font-extrabold">2€</span>
+              <span class="font-medium text-black">/l'unitée</span>
+            </p>
+            <p
+              class="text-xs font-medium text-gray-900 tracking-wide uppercase"
+            >
+              Included :
+            </p>
+          </div>
+
+          <!-- CARTE PART BAS-->
+          <div class="flex flex-grow flex-col items-center">
+            <img
+              src="./ressources/chaises-opti.webp"
+              alt="Photo du Photobooth"
+              class="h-[320px] w-[272px] object-cover rounded"
+            />
+            <p class="mt-2">
+              La classique chaise pliante, offre une assise simple,
+              fonctionnelle et économique. Transportable partout, elle est
+              idéale pour vos cérémonies, réceptions, séminaires ou tout autres
+              évenements.
+            </p>
+          </div>
+        </div>
+        <!-- #endregion -->
+
+        <!-- #region CARD -->
+        <div
+          class="swiper-slide min-h-[450px] w-80 flex flex-col shadow-md rounded-lg mt-7 px-6 py-4 text-left bg-red-200"
+        >
+          <!-- CARTE PART HAUT-->
+          <div class="mb-5">
+            <h2 class="text-2xl font-bold text-gray-900">
+              Tente de réceptions
+            </h2>
+            <p class="text-md text-gray-800">Locations</p>
+            <p class="mt-2">
+              <span class="text-4xl font-extrabold">2€</span>
+              <span class="font-medium text-black">/l'unitée</span>
+            </p>
+            <p
+              class="text-xs font-medium text-gray-900 tracking-wide uppercase"
+            >
+              Included :
+            </p>
+          </div>
+
+          <!-- CARTE PART BAS-->
+          <div class="flex flex-grow flex-col items-center">
+            <img
+              src="./ressources/tente.webp"
+              alt="Photo du Photobooth"
+              class="h-[320px] w-[272px] object-cover rounded"
+            />
+            <p class="mt-2">
+              La classique chaise pliante, offre une assise simple,
+              fonctionnelle et économique. Transportable partout, elle est
+              idéale pour vos cérémonies, réceptions, séminaires ou tout autres
+              évenements.
+            </p>
+          </div>
+        </div>
+        <!-- #endregion -->
+
+        <!-- #region CARD -->
+        <div
+          class="swiper-slide min-h-[450px] w-80 flex flex-col shadow-md rounded-lg mt-7 px-6 py-4 text-left bg-lime-200"
+        >
+          <!-- CARTE PART HAUT-->
+          <div class="mb-5">
+            <h2 class="text-2xl font-bold text-gray-900">Tables pliantes</h2>
+            <p class="text-md text-gray-800">Locations</p>
+            <p class="mt-2">
+              <span class="text-4xl font-extrabold">2€</span>
+              <span class="font-medium text-black">/l'unitée</span>
+            </p>
+            <p
+              class="text-xs font-medium text-gray-900 tracking-wide uppercase"
+            >
+              Included :
+            </p>
+          </div>
+
+          <!-- CARTE PART BAS-->
+          <div class="flex flex-grow flex-col items-center">
+            <img
+              src="./ressources/tablespliantes.webp"
+              alt="Photo du Photobooth"
+              class="h-[320px] w-[272px] object-cover rounded"
+            />
+            <p class="mt-2">
+              La classique chaise pliante, offre une assise simple,
+              fonctionnelle et économique. Transportable partout, elle est
+              idéale pour vos cérémonies, réceptions, séminaires ou tout autres
+              évenements.
+            </p>
+          </div>
+        </div>
+        <!-- #endregion -->
+
+        <!-- #region CARD -->
+        <div
+          class="swiper-slide min-h-[450px] flex flex-col shadow-md rounded-lg mt-7 px-6 py-4 text-left bg-yellow-200"
+        >
+          <!-- CARTE PART HAUT-->
+          <div class="mb-5">
+            <h2 class="text-2xl font-bold text-gray-900">Candy Bar</h2>
+            <p class="text-md text-gray-800">Locations</p>
+            <p class="mt-2">
+              <span class="text-4xl font-extrabold">75€</span>
+              <span class="font-medium text-black">/day</span>
+            </p>
+            <p
+              class="text-xs font-medium text-gray-900 tracking-wide uppercase"
+            >
+              Included :
+            </p>
+          </div>
+
+          <!-- CARTE PART BAS-->
+          <div class="flex flex-grow flex-col items-center">
+            <img
+              src="./ressources/candybar.webp"
+              alt="Photo du Photobooth"
+              class="h-[320px] w-[272px] object-cover rounded"
+            />
+            <p class="mt-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequuntur, praesentium quasi minus est totam necessitatibus
+              sunt quidem eius fuga autem? Lorem, ipsum dolor. Lorem ipsum dolor
+              sit amet.
+            </p>
+          </div>
+        </div>
+        <!-- #endregion -->
+
+        <!-- #region CARD -->
+        <div
+          class="swiper-slide min-h-[450px] flex flex-col shadow-md rounded-lg mt-7 px-6 py-4 text-left bg-lime-200"
+        >
+          <!-- CARTE PART HAUT-->
+          <div class="mb-5">
+            <h2 class="text-2xl font-bold text-gray-900">Beer Bar</h2>
+            <p class="text-md text-gray-800">Locations</p>
+            <p class="mt-2">
+              <span class="text-4xl font-extrabold">75€</span>
+              <span class="font-medium text-black">/day</span>
+            </p>
+            <p
+              class="text-xs font-medium text-gray-900 tracking-wide uppercase"
+            >
+              Included :
+            </p>
+          </div>
+
+          <!-- CARTE PART BAS-->
+          <div class="flex flex-grow flex-col items-center">
+            <img
+              src="./ressources/beerbar.webp"
+              alt="Photo du Photobooth"
+              class="h-[320px] w-[272px] object-cover rounded"
+            />
+            <p class="mt-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequuntur, praesentium quasi minus est totam necessitatibus
+              sunt quidem eius fuga autem? Lorem ipsum dolor sit amet,
+              consectetur adipisicing elit
+            </p>
+          </div>
+        </div>
+        <!-- #endregion -->
+
+        <!-- #region CARD -->
+        <div
+          class="swiper-slide min-h-[450px] w-80 flex flex-col shadow-md rounded-lg mt-7 px-6 py-4 text-left bg-pink-200"
+        >
+          <!-- CARTE PART HAUT-->
+          <div class="mb-5">
+            <h2 class="text-2xl font-bold text-gray-900">Gold Book Bar</h2>
+            <p class="text-md text-gray-800">Locations</p>
+            <p class="mt-2">
+              <span class="text-4xl font-extrabold">75€</span>
+              <span class="font-medium text-black">/day</span>
+            </p>
+            <p
+              class="text-xs font-medium text-gray-900 tracking-wide uppercase"
+            >
+              Included :
+            </p>
+          </div>
+
+          <!-- CARTE PART BAS-->
+          <div class="flex flex-grow flex-col items-center">
+            <img
+              src="./ressources/goldbookbar.webp"
+              alt="Photo du Photobooth"
+              class="h-[320px] w-[272px] object-cover rounded"
+            />
+            <p class="mt-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequuntur, praesentium quasi minus est totam necessitatibus
+              sunt quidem eius fuga autem? Lorem ipsum dolor sit, amet
+              consectetur adipisicing elit.
+            </p>
+          </div>
+        </div>
+        <!-- #endregion -->
+
+      </div>
+      <div class="swiper-button-next hover:text-blue-400"></div>
+      <div class="swiper-button-prev hover:text-blue-400"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+</section>
 <!-- #endregion -->
 
 
@@ -391,6 +572,7 @@
       </footer>
 <!-- #endregion -->
 
+    <script src="swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
     <script src="app.js"></script>
