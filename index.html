@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./src/swiper-bundle.min.css">
     <link rel="stylesheet" href="dist/output.css"/>
     <title>B.Evenement</title>
   </head>
@@ -134,51 +134,97 @@
             Nos Réalisations
         </h2>
 
-        <div class="grid gap-5 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-
-        <!-- #region CARD -->
-            <div class="shadow-lg realisations">
-                <img src="./ressources/rea1-opti.webp" alt="Photo d'une réalisation" class="h-80 w-full object-cover">
-                <div class="p-4">
-         
-                  <div class="flex justify-start">
-                    <p class="font-['Amatic_SC'] font-bold text-xl">Arche de ballons</p>
-                  </div>
+        <!-- Swiper -->
+      <div class="slide-container swiper max-w-[1120px] w-full px-10">
+        <div
+          class="slide-content-realisation mx-auto mb-10 pb-7 overflow-hidden rounded-md md:mx-10 md:my-10"
+        >
+          <div class="max-w-8xl card-wrapper swiper-wrapper">
+            <!-- #region CARD -->
+            <div class="swiper-slide shadow-lg realisations">
+              <img
+                src="./ressources/rea1-opti.webp"
+                alt="Photo d'une réalisation"
+                class="h-80 w-full object-cover"
+              />
+              <div class="p-4">
+                <div class="flex justify-start">
+                  <p class="font-['Amatic_SC'] font-bold text-xl">
+                    Arche de ballons
+                  </p>
                 </div>
+              </div>
             </div>
 
-            <div class="shadow-lg realisations">
-                <img src="./ressources/rea2-opti.webp" alt="Photo d'une réalisation" class="h-80 w-full object-cover">
-                <div class="p-4">
-         
-                  <div class="flex justify-start">
-                    <p class="font-['Amatic_SC'] font-bold text-xl">Décoration personalisé</p>
-                  </div>
+            <div class="swiper-slide shadow-lg realisations">
+              <img
+                src="./ressources/rea2-opti.webp"
+                alt="Photo d'une réalisation"
+                class="h-80 w-full object-cover"
+              />
+              <div class="p-4">
+                <div class="flex justify-start">
+                  <p class="font-['Amatic_SC'] font-bold text-xl">
+                    Décoration personalisé
+                  </p>
                 </div>
+              </div>
             </div>
 
-            <div class="shadow-lg realisations">
-                <img src="./ressources/rea3-opti.webp" alt="Photo d'une réalisation" class="h-80 w-full object-cover">
-                <div class="p-4">
-         
-                  <div class="flex justify-start">
-                    <p class="font-['Amatic_SC'] font-bold text-xl">Arche de ballons</p>
-                  </div>
+            <div class="swiper-slide shadow-lg realisations">
+              <img
+                src="./ressources/rea3-opti.webp"
+                alt="Photo d'une réalisation"
+                class="h-80 w-full object-cover"
+              />
+              <div class="p-4">
+                <div class="flex justify-start">
+                  <p class="font-['Amatic_SC'] font-bold text-xl">
+                    Arche de ballons
+                  </p>
                 </div>
+              </div>
             </div>
 
-            <div class="shadow-lg realisations">
-                <img src="./ressources/safarie-opti.webp" alt="Photo d'une réalisation" class="h-80 w-full object-cover">
-                <div class="p-4">
-         
-                  <div class="flex justify-start">
-                    <p class="font-['Amatic_SC'] font-bold text-xl">Décoration thème safarie</p>
-                  </div>
+            <div class="swiper-slide shadow-lg realisations">
+              <img
+                src="./ressources/safarie-opti.webp"
+                alt="Photo d'une réalisation"
+                class="h-80 w-full object-cover"
+              />
+              <div class="p-4">
+                <div class="flex justify-start">
+                  <p class="font-['Amatic_SC'] font-bold text-xl">
+                    Décoration thème safarie
+                  </p>
                 </div>
+              </div>
             </div>
-        <!-- #endregion -->
 
+            <div class="swiper-slide shadow-lg realisations">
+              <img
+                src="./ressources/rea-5.webp"
+                alt="Photo d'une réalisation"
+                class="h-80 w-full object-cover"
+              />
+              <div class="p-4">
+                <div class="flex justify-start">
+                  <p class="font-['Amatic_SC'] font-bold text-xl">
+                    Arche de ballons
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- #endregion -->
+          </div>
         </div>
+
+        <div class="swiper-button-next swiper-navBtn hover:text-blue-400" id="next-realisation"></div>
+        <div class="swiper-button-prev swiper-navBtn hover:text-blue-400" id="prev-realisation"></div>
+        <div class="swiper-pagination swiper-pagination-realisation"></div>
+      </div>
+    </section>
+    <!-- #endregion -->
 
     </section>
 <!-- #endregion -->
@@ -195,7 +241,7 @@
     <!-- Swiper -->
     <div class="slide-container swiper max-w-[1120px] w-full px-10">
       <div
-        class="slide-content mx-auto mb-10 overflow-hidden rounded-md md:mx-10 md:my-10"
+        class="slide-content-prestation mx-auto mb-10 overflow-hidden rounded-md md:mx-10 md:my-10"
       >
         <div class="max-w-8xl card-wrapper swiper-wrapper">
           <!-- #region CARD -->
@@ -205,10 +251,9 @@
             <!-- CARTE PART HAUT-->
             <div class="mb-5">
               <h2 class="text-2xl font-bold text-gray-900">Le PHOTOBOOTH</h2>
-              <p class="text-md text-gray-800">Locations</p>
+              <p class="text-md text-gray-800">À partir de :</p>
               <p class="mt-2">
                 <span class="text-4xl font-extrabold">300€</span>
-                <span class="font-medium text-black">/ jour</span>
               </p>
             </div>
 
@@ -236,10 +281,9 @@
             <!-- CARTE PART HAUT-->
             <div class="mb-5">
               <h2 class="text-2xl font-bold text-gray-900">Arche ronde</h2>
-              <p class="text-md text-gray-800">Locations</p>
+              <p class="text-md text-gray-800">À partir de :</p>
               <p class="mt-2">
                 <span class="text-4xl font-extrabold">30€</span>
-                <span class="font-medium text-black">/ jour</span>
               </p>
             </div>
 
@@ -269,10 +313,9 @@
               <h2 class="text-2xl font-bold text-gray-900">
                 Chaises Pliantes
               </h2>
-              <p class="text-md text-gray-800">Locations</p>
+              <p class="text-md text-gray-800">À partir de :</p>
               <p class="mt-2">
                 <span class="text-4xl font-extrabold">2€</span>
-                <span class="font-medium text-black">/ l'unitée</span>
               </p>
             </div>
 
@@ -302,10 +345,9 @@
               <h2 class="text-2xl font-bold text-gray-900">
                 Tente de réceptions
               </h2>
-              <p class="text-md text-gray-800">Locations</p>
+              <p class="text-md text-gray-800">À partir de :</p>
               <p class="mt-2">
                 <span class="text-4xl font-extrabold">150€</span>
-                <span class="font-medium text-black">/ jour</span>
               </p>
             </div>
 
@@ -335,10 +377,9 @@
             <!-- CARTE PART HAUT-->
             <div class="mb-5">
               <h2 class="text-2xl font-bold text-gray-900">Tables pliantes</h2>
-              <p class="text-md text-gray-800">Locations</p>
+              <p class="text-md text-gray-800">À partir de :</p>
               <p class="mt-2">
                 <span class="text-4xl font-extrabold">8€</span>
-                <span class="font-medium text-black">/l'unitée</span>
               </p>
             </div>
 
@@ -368,10 +409,9 @@
             <!-- CARTE PART HAUT-->
             <div class="mb-5">
               <h2 class="text-2xl font-bold text-gray-900">Candy Bar</h2>
-              <p class="text-md text-gray-800">Locations</p>
+              <p class="text-md text-gray-800">À partir de :</p>
               <p class="mt-2">
                 <span class="text-4xl font-extrabold">75€</span>
-                <span class="font-medium text-black">/ jour</span>
               </p>
             </div>
 
@@ -401,10 +441,9 @@
               <h2 class="text-2xl font-bold text-gray-900">
                 Cocktail & Beer Bar
               </h2>
-              <p class="text-md text-gray-800">Locations</p>
+              <p class="text-md text-gray-800">À partir de :</p>
               <p class="mt-2">
                 <span class="text-4xl font-extrabold">75€</span>
-                <span class="font-medium text-black">/ jour</span>
               </p>
             </div>
 
@@ -431,10 +470,9 @@
             <!-- CARTE PART HAUT-->
             <div class="mb-5">
               <h2 class="text-2xl font-bold text-gray-900">Bar Livre d'or</h2>
-              <p class="text-md text-gray-800">Locations</p>
+              <p class="text-md text-gray-800">À partir de :</p>
               <p class="mt-2">
                 <span class="text-4xl font-extrabold">75€</span>
-                <span class="font-medium text-black">/ jour</span>
               </p>
             </div>
 
@@ -457,9 +495,9 @@
         </div>
       </div>
 
-      <div class="swiper-button-next swiper-navBtn"></div>
-      <div class="swiper-button-prev swiper-navBtn"></div>
-      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next swiper-navBtn hover:text-blue-400" id="next-prestation"></div>
+      <div class="swiper-button-prev swiper-navBtn hover:text-blue-400" id="prev-prestation"></div>
+      <div class="swiper-pagination swiper-pagination-prestation"></div>
     </div>
 </section>
 <!-- #endregion -->

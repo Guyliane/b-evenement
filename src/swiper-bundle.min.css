@@ -197,7 +197,9 @@
   --swiper-navigation-size: 44px;
 }
 .swiper-button-next,
-.swiper-button-prev {
+.swiper-button-prev,
+.swiper-button-next-real,
+.swiper-button-prev-real {
   position: absolute;
   top: 50%;
   width: calc(var(--swiper-navigation-size) / 44 * 27);
@@ -211,23 +213,31 @@
   color: var(--swiper-navigation-color, var(--swiper-theme-color));
 }
 .swiper-button-next.swiper-button-disabled,
-.swiper-button-prev.swiper-button-disabled {
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next-real.swiper-button-disabled,
+.swiper-button-prev-real.swiper-button-disabled {
   opacity: 0.35;
   cursor: auto;
   pointer-events: none;
 }
 .swiper-button-next.swiper-button-hidden,
-.swiper-button-prev.swiper-button-hidden {
+.swiper-button-prev.swiper-button-hidden,
+.swiper-button-next-real.swiper-button-hidden,
+.swiper-button-prev-real.swiper-button-hidden {
   opacity: 0;
   cursor: auto;
   pointer-events: none;
 }
 .swiper-navigation-disabled .swiper-button-next,
-.swiper-navigation-disabled .swiper-button-prev {
+.swiper-navigation-disabled .swiper-button-prev,
+.swiper-navigation-disabled .swiper-button-next-real,
+.swiper-navigation-disabled .swiper-button-prev-real {
   display: none !important;
 }
 .swiper-button-next:after,
-.swiper-button-prev:after {
+.swiper-button-prev:after,
+.swiper-button-next-real:after,
+.swiper-button-prev-real:after {
   font-family: swiper-icons;
   font-size: var(--swiper-navigation-size);
   text-transform: none !important;
@@ -236,21 +246,29 @@
   line-height: 1;
 }
 .swiper-button-prev,
-.swiper-rtl .swiper-button-next {
+.swiper-rtl .swiper-button-next,
+.swiper-button-prev-real,
+.swiper-rtl .swiper-button-next-real {
   left: 10px;
   right: auto;
 }
 .swiper-button-prev:after,
-.swiper-rtl .swiper-button-next:after {
+.swiper-rtl .swiper-button-next:after,
+.swiper-button-prev-real:after,
+.swiper-rtl .swiper-button-next-real:after {
   content: "prev";
 }
 .swiper-button-next,
-.swiper-rtl .swiper-button-prev {
+.swiper-rtl .swiper-button-prev,
+.swiper-button-next-real,
+.swiper-rtl .swiper-button-prev-real {
   right: 10px;
   left: auto;
 }
 .swiper-button-next:after,
-.swiper-rtl .swiper-button-prev:after {
+.swiper-rtl .swiper-button-prev:after,
+.swiper-button-next-real:after,
+.swiper-rtl .swiper-button-prev-real:after {
   content: "next";
 }
 .swiper-button-lock {

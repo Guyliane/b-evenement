@@ -22,20 +22,12 @@ navmenuco.addEventListener("click", toggleMenu);
 // Greensock
 
 const logoHome = document.querySelector(".logo-home");
-const imgBallon = document.querySelector(".img-ballon");
-const realisations = document.querySelectorAll(".realisations");
-
 gsap.from(logoHome, { y: 450, duration: 1 });
-gsap.from(realisations, {
-  y: 250,
-  scrollTrigger: realisations,
-  duration: 1,
-  stagger: 0.1,
-});
+
 // ------------------------------------------
 
 // SliderJS
-var swiper = new Swiper(".slide-content", {
+var swiper = new Swiper(".slide-content-prestation", {
   slidesPerView: 3,
   spaceBetween: 25,
   loop: true,
@@ -43,13 +35,13 @@ var swiper = new Swiper(".slide-content", {
   fade: "true",
   grabCursor: "true",
   pagination: {
-    el: ".swiper-pagination",
+    el: ".swiper-pagination-prestation",
     clickable: true,
     dynamicBullets: "true",
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: "#next-prestation",
+    prevEl: "#prev-prestation",
   },
   breakpoints: {
     0: {
@@ -60,6 +52,39 @@ var swiper = new Swiper(".slide-content", {
     },
     950: {
       slidesPerView: 3,
+    },
+  },
+});
+
+// SliderJS
+var swiper1 = new Swiper(".slide-content-realisation", {
+  slidesPerView: 3,
+  spaceBetween: 25,
+  loop: true,
+  centerSlide: "true",
+  fade: "true",
+  grabCursor: "true",
+  pagination: {
+    el: ".swiper-pagination-realisation",
+    clickable: true,
+    dynamicBullets: "true",
+  },
+  navigation: {
+    nextEl: "#next-realisation",
+    prevEl: "#prev-realisation",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    520: {
+      slidesPerView: 2,
+    },
+    815: {
+      slidesPerView: 3,
+    },
+    950: {
+      slidesPerView: 4,
     },
   },
 });
