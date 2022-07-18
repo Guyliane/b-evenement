@@ -29,13 +29,13 @@ gsap.from(logoHome, { y: 450, duration: 1 });
 gsap.from(realisations, {
   y: 250,
   scrollTrigger: realisations,
-  duration: 3,
+  duration: 1,
   stagger: 0.1,
 });
 // ------------------------------------------
 
 // SliderJS
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".slide-content", {
   slidesPerView: 3,
   spaceBetween: 25,
   loop: true,
