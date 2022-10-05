@@ -1,259 +1,214 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="theme-color" content="#ffffff"/>
-    <meta name="description" content="Author: Guyliane DE JESUS PIMENTA,
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="description" content="Author: Guyliane DE JESUS PIMENTA,
     Design: Guyliane DE JESUS PIMENTA, Site web de B.Evenement, 
     Location et Organisations situé à Lamotte-Beuvron">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./src/swiper-bundle.min.css">
-    <link rel="stylesheet" href="dist/output.css"/>
-    <title>B.Evenement</title>
-  </head>
-  <body class="bg-white">
-    
-    <section class="bubble-bg relative">
-       
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZNW36LNW6Z"></script>
+  <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-ZNW36LNW6Z'); </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/swiper-bundle.min.css">
+  <link rel="stylesheet" href="dist/output.css" />
+  <title>B.Evenement</title>
+</head>
+
+<body class="bg-white">
+
+  <section class="bubble-bg relative">
+
     <!-- #region NAVBAR -->
     <nav
-      class="fixed top-0 bg-gray-50 p-4 w-full grid grid-cols-none shadow-md md:max-w-7xl md:grid-cols-menu md:shadow-none md:relative md:mx-auto md:bg-transparent z-50"
-    >
+      class="fixed top-0 bg-gray-50 p-4 w-full grid grid-cols-none shadow-md md:max-w-7xl md:grid-cols-menu md:shadow-none md:relative md:mx-auto md:bg-transparent z-50">
       <div class="flex justify-between items-center md:justify-center">
         <a href="#home">
           <img src="./ressources/miniBevenementLogo.png" alt="B-evenement logo" class="w-10 sm:w-24" />
         </a>
 
-        <button
-          class="icone-toggle bg-white rounded-md p-2 ring-1 ring-black ring-opacity-20 md:hidden"
-        >
-          <img
-            src="./ressources/menu.svg"
-            alt="Humburger logo menu"
-            class="h-6 w-6"
-          />
+        <button class="icone-toggle bg-white rounded-md p-2 ring-1 ring-black ring-opacity-20 md:hidden">
+          <img src="./ressources/menu.svg" alt="Humburger logo menu" class="h-6 w-6" />
         </button>
       </div>
 
       <ul
-        class="toggle-menu hidden px-1 pt-6 bg-gray-50 flex flex-col md:flex md:bg-transparent md:flex-row md:space-x-10 md:w-auto md:items-center md:justify-center md:pt-0"
-      >
+        class="toggle-menu hidden px-1 pt-6 bg-gray-50 flex flex-col md:flex md:bg-transparent md:flex-row md:space-x-10 md:w-auto md:items-center md:justify-center md:pt-0">
         <li class="py-2 text-center border-t border-gray-200 md:border-0">
-          <a
-            href="#apropos"
-            class="font-['Amatic_SC'] text-3xl text-zinc-700 navmenuApropos hover:text-green-700"
-            >A propos</a>
+          <a href="#apropos" class="font-['Amatic_SC'] text-3xl text-zinc-700 navmenuApropos hover:text-green-700">A
+            propos</a>
         </li>
 
         <li class="py-2 text-center border-t border-gray-200 md:border-0">
-          <a
-            href="#realisations"
-            class="font-['Amatic_SC'] text-3xl text-zinc-700 navmenuReal hover:text-green-700"
-            >Réalisations</a
-          >
+          <a href="#realisations"
+            class="font-['Amatic_SC'] text-3xl text-zinc-700 navmenuReal hover:text-green-700">Réalisations</a>
         </li>
 
         <li class="py-2 text-center border-t border-gray-200 md:border-0">
-            <a
-              href="#prestations"
-              class="font-['Amatic_SC'] text-3xl text-zinc-700 navmenuPres hover:text-green-700"
-              >Nos Préstations</a
-            >
-          </li>
+          <a href="#prestations" class="font-['Amatic_SC'] text-3xl text-zinc-700 navmenuPres hover:text-green-700">Nos
+            Préstations</a>
+        </li>
       </ul>
 
-      <div
-        class="toggle-menu flex hidden justify-center items-center mt-6 md:mt-0 md:justify-end md:flex"
-      >
-        <a
-          href="#contact"
-          class="shadow-md px-6 py-2 border font-medium rounded-md text-white bg-green-700 navmenuContact hover:bg-green-800 text-center w-40"
-          >Contact</a
-        >
+      <div class="toggle-menu flex hidden justify-center items-center mt-6 md:mt-0 md:justify-end md:flex">
+        <a href="#contact"
+          class="shadow-md px-6 py-2 border font-medium rounded-md text-white bg-green-700 navmenuContact hover:bg-green-800 text-center w-40">Contact</a>
       </div>
     </nav>
     <!-- #endregion -->
 
     <!-- #region Accueil -->
     <div class="px-10 pt-40 pb-72 w-full relative overflow-hidden md:pt-24" id="home">
-        <img src="./ressources/bevenementlogo.webp" alt="Logo B-evenement avec sous-titre" class="logo-home px-5 py-9 m-auto w-auto sm:w-[400px] sm:h-[400px] md:w-[500px] md:h-[500px]">
+      <img src="./ressources/bevenementlogo.webp" alt="Logo B-evenement avec sous-titre"
+        class="logo-home px-5 py-9 m-auto w-auto sm:w-[400px] sm:h-[400px] md:w-[500px] md:h-[500px]">
     </div>
     <!-- #endregion -->
 
     <!-- #region Fleche Down Bounce -->
-        <div class="absolute bottom-4 left-1/2 -translate-x-1/2 md:bottom-10">
-        <a
-            href="#apropos" aria-label="Flêche vers le bas"
-            class="animate-bounce bg-white p-2 w-12 h-12 ring-1 ring-slate-900/5 shadow-lg rounded-full flex items-center justify-center sm:w-16 sm:h-16"
-        >
-            <svg
-            class="w-6 h-6 text-green-700 sm:w-8 sm:h-8"
-            fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            >
-            <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-            </svg>
-        </a>
-        </div>
-    </section>
-<!-- #endregion -->
-    </section>
-
-<!-- #region A propos de nous -->
-    <section id="apropos" class="bg-lime-200">
-    <div class="max-w-7xl mx-auto px-4 py-10 sm:mt-20">
-        <div class="relative container mx-auto bg-gray-100">
-     
-          <img src="ressources/aboutPicture.webp" alt="wedding" class="w-full object-cover h-72 sm:w-1/2 sm:absolute sm:h-full">
-     
-          <div class="py-10 px-10 sm:ml-auto sm:w-1/2">
-            <h1 class="text-5xl font-['Amatic_SC'] uppercase">b.événement</h1>
-            <h2 class="mb-5 font-['Amatic_SC'] text-3xl">A propos de nous</h2>
-            <p class="font-thin text-lg"><strong>B.ÉVÉNEMENT</strong> vous souhaite la bienvenue. <br> 
-              Spécialisé dans l'évenementiel nous nous engageons à vous offrir le meilleur de nos prestations, avec une attention particulière sur vos gouts et avis. <br>
-              B.ÉVÉNEMENT à ouvert ces portes le 01/04/2022, <br> fondé par <strong>BLOT Gary.</strong> <br>
-              Nous espérons que vous apprécierez nos produits autant que nous aimons vous les offrir. 
-              Si vous avez des questions ou des commentaires, n’hésitez pas à nous contacter. <br>
-              Cordialement,
-               B.ÉVÉNEMENT</p>
-            <a href="#contact" class="inline-flex ring-1 ring-slate-300 rounded shadow-md items-center justify-between p-3 bg-green-700 hover:bg-green-500 text-white mt-10 mb:mt-20">
-              <span class="mr-4">Contactez-nous</span>
-              <img src="./ressources/mail-svgrepo-com.svg" alt="logo d'un téléphone" class="w-6 h-6">
-            </a>
-          </div>
-        </div>
+    <div class="absolute bottom-4 left-1/2 -translate-x-1/2 md:bottom-10">
+      <a href="#apropos" aria-label="Flêche vers le bas"
+        class="animate-bounce bg-white p-2 w-12 h-12 ring-1 ring-slate-900/5 shadow-lg rounded-full flex items-center justify-center sm:w-16 sm:h-16">
+        <svg class="w-6 h-6 text-green-700 sm:w-8 sm:h-8" fill="none" stroke-linecap="round" stroke-linejoin="round"
+          stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+          <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+        </svg>
+      </a>
     </div>
-    </section>
-<!-- #endregion -->
+  </section>
+  <!-- #endregion -->
+  </section>
 
-<!-- #region Nos réalisations -->
-    <section class="max-w-7xl mx-auto px-4 py-10">
-        <h2 class="mb-5 font-['Amatic_SC'] text-5xl text-right"  id="realisations">
-            Nos Réalisations
-        </h2>
+  <!-- #region A propos de nous -->
+  <section id="apropos" class="bg-lime-200">
+    <div class="max-w-7xl mx-auto px-4 py-10 sm:mt-20">
+      <div class="relative container mx-auto bg-gray-100">
 
-        <!-- Swiper -->
-      <div class="slide-container swiper max-w-[1120px] w-full px-10">
-        <div
-          class="slide-content-realisation mx-auto mb-10 pb-7 overflow-hidden rounded-md md:mx-10 md:my-10"
-        >
-          <div class="max-w-8xl card-wrapper swiper-wrapper">
-            <!-- #region CARD -->
-            <div class="swiper-slide shadow-lg realisations">
-              <img
-                src="./ressources/rea1-opti.webp"
-                alt="Photo d'une réalisation"
-                class="h-80 w-full object-cover"
-              />
-              <div class="p-4">
-                <div class="flex justify-start">
-                  <p class="font-['Amatic_SC'] font-bold text-xl">
-                    Arche de ballons
-                  </p>
-                </div>
-              </div>
-            </div>
+        <img src="ressources/aboutPicture.webp" alt="wedding"
+          class="w-full object-cover h-72 sm:w-1/2 sm:absolute sm:h-full">
 
-            <div class="swiper-slide shadow-lg realisations">
-              <img
-                src="./ressources/rea2-opti.webp"
-                alt="Photo d'une réalisation"
-                class="h-80 w-full object-cover"
-              />
-              <div class="p-4">
-                <div class="flex justify-start">
-                  <p class="font-['Amatic_SC'] font-bold text-xl">
-                    Décoration personalisé
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide shadow-lg realisations">
-              <img
-                src="./ressources/rea3-opti.webp"
-                alt="Photo d'une réalisation"
-                class="h-80 w-full object-cover"
-              />
-              <div class="p-4">
-                <div class="flex justify-start">
-                  <p class="font-['Amatic_SC'] font-bold text-xl">
-                    Arche de ballons
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide shadow-lg realisations">
-              <img
-                src="./ressources/safarie-opti.webp"
-                alt="Photo d'une réalisation"
-                class="h-80 w-full object-cover"
-              />
-              <div class="p-4">
-                <div class="flex justify-start">
-                  <p class="font-['Amatic_SC'] font-bold text-xl">
-                    Décoration thème safarie
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide shadow-lg realisations">
-              <img
-                src="./ressources/rea-5.webp"
-                alt="Photo d'une réalisation"
-                class="h-80 w-full object-cover"
-              />
-              <div class="p-4">
-                <div class="flex justify-start">
-                  <p class="font-['Amatic_SC'] font-bold text-xl">
-                    Arche de ballons
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- #endregion -->
-          </div>
+        <div class="py-10 px-10 sm:ml-auto sm:w-1/2">
+          <h1 class="text-5xl font-['Amatic_SC'] uppercase">b.événement</h1>
+          <h2 class="mb-5 font-['Amatic_SC'] text-3xl">A propos de nous</h2>
+          <p class="font-thin text-lg"><strong>B.ÉVÉNEMENT</strong> vous souhaite la bienvenue. <br>
+            Spécialisé dans l'évenementiel nous nous engageons à vous offrir le meilleur de nos prestations, avec une
+            attention particulière sur vos gouts et avis. <br>
+            B.ÉVÉNEMENT à ouvert ces portes le 01/04/2022, <br> fondé par <strong>BLOT Gary.</strong> <br>
+            Nous espérons que vous apprécierez nos produits autant que nous aimons vous les offrir.
+            Si vous avez des questions ou des commentaires, n’hésitez pas à nous contacter. <br>
+            Cordialement,
+            B.ÉVÉNEMENT</p>
+          <a href="#contact"
+            class="inline-flex ring-1 ring-slate-300 rounded shadow-md items-center justify-between p-3 bg-green-700 hover:bg-green-500 text-white mt-10 mb:mt-20">
+            <span class="mr-4">Contactez-nous</span>
+            <img src="./ressources/mail-svgrepo-com.svg" alt="logo d'un téléphone" class="w-6 h-6">
+          </a>
         </div>
-
-        <div class="swiper-button-next swiper-navBtn hover:text-blue-400" id="next-realisation"></div>
-        <div class="swiper-button-prev swiper-navBtn hover:text-blue-400" id="prev-realisation"></div>
-        <div class="swiper-pagination swiper-pagination-realisation"></div>
       </div>
-    </section>
-    <!-- #endregion -->
+    </div>
+  </section>
+  <!-- #endregion -->
 
-    </section>
-<!-- #endregion -->
+  <!-- #region Nos réalisations -->
+  <section class="max-w-7xl mx-auto px-4 py-10">
+    <h2 class="mb-5 font-['Amatic_SC'] text-5xl text-right" id="realisations">
+      Nos Réalisations
+    </h2>
 
-<!-- #region Nos préstations Slider -->
-<div class="relative">
-  <img src="./ressources/ruban-bg.webp" alt="Illustration d'un ruban" class="absolute w-full object-cover top-0 z-0 overflow-hidden">
-</div>
-<section id="prestations" class="max-w-7xl mx-auto py-10 z-20">
-  <h2 class="text-left font-['Amatic_SC'] mt-20 text-5xl ml-2  z-10 relative">
-      Nos Préstations
-  </h2>
-  <p class="text-left text-2xl ml-2 font-['Amatic_SC']">Parcourez nos services en location pour vos événements.</p>
     <!-- Swiper -->
     <div class="slide-container swiper max-w-[1120px] w-full px-10">
-      <div
-        class="slide-content-prestation mx-auto mb-10 overflow-hidden rounded-md md:mx-10 md:my-10"
-      >
+      <div class="slide-content-realisation mx-auto mb-10 pb-7 overflow-hidden rounded-md md:mx-10 md:my-10">
+        <div class="max-w-8xl card-wrapper swiper-wrapper">
+          <!-- #region CARD -->
+          <div class="swiper-slide shadow-lg realisations">
+            <img src="./ressources/rea1-opti.webp" alt="Photo d'une réalisation" class="h-80 w-full object-cover" />
+            <div class="p-4">
+              <div class="flex justify-start">
+                <p class="font-['Amatic_SC'] font-bold text-xl">
+                  Arche de ballons
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide shadow-lg realisations">
+            <img src="./ressources/rea2-opti.webp" alt="Photo d'une réalisation" class="h-80 w-full object-cover" />
+            <div class="p-4">
+              <div class="flex justify-start">
+                <p class="font-['Amatic_SC'] font-bold text-xl">
+                  Décoration personalisé
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide shadow-lg realisations">
+            <img src="./ressources/rea3-opti.webp" alt="Photo d'une réalisation" class="h-80 w-full object-cover" />
+            <div class="p-4">
+              <div class="flex justify-start">
+                <p class="font-['Amatic_SC'] font-bold text-xl">
+                  Arche de ballons
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide shadow-lg realisations">
+            <img src="./ressources/safarie-opti.webp" alt="Photo d'une réalisation" class="h-80 w-full object-cover" />
+            <div class="p-4">
+              <div class="flex justify-start">
+                <p class="font-['Amatic_SC'] font-bold text-xl">
+                  Décoration thème safarie
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide shadow-lg realisations">
+            <img src="./ressources/rea-5.webp" alt="Photo d'une réalisation" class="h-80 w-full object-cover" />
+            <div class="p-4">
+              <div class="flex justify-start">
+                <p class="font-['Amatic_SC'] font-bold text-xl">
+                  Arche de ballons
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- #endregion -->
+        </div>
+      </div>
+
+      <div class="swiper-button-next swiper-navBtn hover:text-blue-400" id="next-realisation"></div>
+      <div class="swiper-button-prev swiper-navBtn hover:text-blue-400" id="prev-realisation"></div>
+      <div class="swiper-pagination swiper-pagination-realisation"></div>
+    </div>
+  </section>
+  <!-- #endregion -->
+
+  </section>
+  <!-- #endregion -->
+
+  <!-- #region Nos préstations Slider -->
+  <div class="relative">
+    <img src="./ressources/ruban-bg.webp" alt="Illustration d'un ruban"
+      class="absolute w-full object-cover top-0 z-0 overflow-hidden">
+  </div>
+  <section id="prestations" class="max-w-7xl mx-auto py-10 z-20">
+    <h2 class="text-left font-['Amatic_SC'] mt-20 text-5xl ml-2  z-10 relative">
+      Nos Préstations
+    </h2>
+    <p class="text-left text-2xl ml-2 font-['Amatic_SC']">Parcourez nos services en location pour vos événements.</p>
+    <!-- Swiper -->
+    <div class="slide-container swiper max-w-[1120px] w-full px-10">
+      <div class="slide-content-prestation mx-auto mb-10 overflow-hidden rounded-md md:mx-10 md:my-10">
         <div class="max-w-8xl card-wrapper swiper-wrapper">
           <!-- #region CARD -->
           <div
-            class="swiper-slide min-h-[450px] flex flex-col shadow-md rounded-lg mt-7 px-6 py-4 text-left bg-lime-200"
-          >
+            class="swiper-slide min-h-[450px] flex flex-col shadow-md rounded-lg mt-7 px-6 py-4 text-left bg-lime-200">
             <!-- CARTE PART HAUT-->
             <div class="mb-5">
               <h2 class="text-2xl font-bold text-gray-900">Le PHOTOBOOTH</h2>
@@ -265,11 +220,8 @@
 
             <!-- CARTE PART BAS-->
             <div class="flex flex-grow flex-col items-center">
-              <img
-                src="./ressources/photobooth.webp"
-                alt="Photo du Photobooth"
-                class="h-[320px] w-[272px] object-cover rounded"
-              />
+              <img src="./ressources/photobooth.webp" alt="Photo du Photobooth"
+                class="h-[320px] w-[272px] object-cover rounded" />
               <p class="mt-2">
                 L'activité la plus tendance qui va divertir vos invités pour
                 tous les événements. Ils repartiront avec des souvenirs de votre
@@ -282,8 +234,7 @@
 
           <!-- #region CARD -->
           <div
-            class="swiper-slide min-h-[450px] flex flex-col shadow-md rounded-lg mt-7 px-6 py-4 text-left bg-pink-200"
-          >
+            class="swiper-slide min-h-[450px] flex flex-col shadow-md rounded-lg mt-7 px-6 py-4 text-left bg-pink-200">
             <!-- CARTE PART HAUT-->
             <div class="mb-5">
               <h2 class="text-2xl font-bold text-gray-900">Arche ronde</h2>
@@ -295,11 +246,8 @@
 
             <!-- CARTE PART BAS-->
             <div class="flex flex-grow flex-col items-center">
-              <img
-                src="./ressources/arche.webp"
-                alt="Photo du Photobooth"
-                class="h-[320px] w-[272px] object-cover rounded"
-              />
+              <img src="./ressources/arche.webp" alt="Photo du Photobooth"
+                class="h-[320px] w-[272px] object-cover rounded" />
               <p class="mt-2">
                 L'arche ronde est parfaite pour réaliser de magnifique
                 décoration personnalisé. Elle peut-être personnalisé à l'aide de
@@ -312,8 +260,7 @@
 
           <!-- #region CARD -->
           <div
-            class="swiper-slide min-h-[450px] w-80 flex flex-col shadow-md rounded-lg mt-7 px-6 py-4 text-left bg-cyan-200"
-          >
+            class="swiper-slide min-h-[450px] w-80 flex flex-col shadow-md rounded-lg mt-7 px-6 py-4 text-left bg-cyan-200">
             <!-- CARTE PART HAUT-->
             <div class="mb-5">
               <h2 class="text-2xl font-bold text-gray-900">
@@ -327,11 +274,8 @@
 
             <!-- CARTE PART BAS-->
             <div class="flex flex-grow flex-col items-center">
-              <img
-                src="./ressources/chaises-opti.webp"
-                alt="Photo du Photobooth"
-                class="h-[320px] w-[272px] object-cover rounded"
-              />
+              <img src="./ressources/chaises-opti.webp" alt="Photo du Photobooth"
+                class="h-[320px] w-[272px] object-cover rounded" />
               <p class="mt-2">
                 La classique chaise pliante, offre une assise simple,
                 fonctionnelle et économique. Transportable partout, elle est
@@ -344,8 +288,7 @@
 
           <!-- #region CARD -->
           <div
-            class="swiper-slide min-h-[450px] w-80 flex flex-col shadow-md rounded-lg mt-7 px-6 py-4 text-left bg-yellow-200"
-          >
+            class="swiper-slide min-h-[450px] w-80 flex flex-col shadow-md rounded-lg mt-7 px-6 py-4 text-left bg-yellow-200">
             <!-- CARTE PART HAUT-->
             <div class="mb-5">
               <h2 class="text-2xl font-bold text-gray-900">
@@ -359,11 +302,8 @@
 
             <!-- CARTE PART BAS-->
             <div class="flex flex-grow flex-col items-center">
-              <img
-                src="./ressources/tente.webp"
-                alt="Photo du Photobooth"
-                class="h-[320px] w-[272px] object-cover rounded"
-              />
+              <img src="./ressources/tente.webp" alt="Photo du Photobooth"
+                class="h-[320px] w-[272px] object-cover rounded" />
               <p class="mt-2">
                 La tente de réception est le produit phare de vos évenements.
                 Légère et facile à transporter.
@@ -378,8 +318,7 @@
 
           <!-- #region CARD -->
           <div
-            class="swiper-slide min-h-[450px] w-80 flex flex-col shadow-md rounded-lg mt-7 px-6 py-4 text-left bg-lime-200"
-          >
+            class="swiper-slide min-h-[450px] w-80 flex flex-col shadow-md rounded-lg mt-7 px-6 py-4 text-left bg-lime-200">
             <!-- CARTE PART HAUT-->
             <div class="mb-5">
               <h2 class="text-2xl font-bold text-gray-900">Tables pliantes</h2>
@@ -391,11 +330,8 @@
 
             <!-- CARTE PART BAS-->
             <div class="flex flex-grow flex-col items-center">
-              <img
-                src="./ressources/tablespliantes.webp"
-                alt="Photo du Photobooth"
-                class="h-[320px] w-[272px] object-cover rounded"
-              />
+              <img src="./ressources/tablespliantes.webp" alt="Photo du Photobooth"
+                class="h-[320px] w-[272px] object-cover rounded" />
               <p class="mt-2">
                 Les tables pliante sont stables est facile à ouvrir et à
                 replier, elles sont un atout pour passer un moment agréable et
@@ -410,8 +346,7 @@
 
           <!-- #region CARD -->
           <div
-            class="swiper-slide min-h-[450px] flex flex-col shadow-md rounded-lg mt-7 px-6 py-4 text-left bg-pink-200"
-          >
+            class="swiper-slide min-h-[450px] flex flex-col shadow-md rounded-lg mt-7 px-6 py-4 text-left bg-pink-200">
             <!-- CARTE PART HAUT-->
             <div class="mb-5">
               <h2 class="text-2xl font-bold text-gray-900">Candy Bar</h2>
@@ -423,11 +358,8 @@
 
             <!-- CARTE PART BAS-->
             <div class="flex flex-grow flex-col items-center">
-              <img
-                src="./ressources/candybar.webp"
-                alt="Photo du Photobooth"
-                class="h-[320px] w-[272px] object-cover rounded"
-              />
+              <img src="./ressources/candybar.webp" alt="Photo du Photobooth"
+                class="h-[320px] w-[272px] object-cover rounded" />
               <p class="mt-2">
                 le Candy Bar est dressée afin que
                 chacun puisse se servir de diverses sucreries. Émerveiller vos
@@ -440,8 +372,7 @@
 
           <!-- #region CARD -->
           <div
-            class="swiper-slide min-h-[450px] flex flex-col shadow-md rounded-lg mt-7 px-6 py-4 text-left bg-cyan-200"
-          >
+            class="swiper-slide min-h-[450px] flex flex-col shadow-md rounded-lg mt-7 px-6 py-4 text-left bg-cyan-200">
             <!-- CARTE PART HAUT-->
             <div class="mb-5">
               <h2 class="text-2xl font-bold text-gray-900">
@@ -455,11 +386,8 @@
 
             <!-- CARTE PART BAS-->
             <div class="flex flex-grow flex-col items-center">
-              <img
-                src="./ressources/beerbar.webp"
-                alt="Photo du Photobooth"
-                class="h-[320px] w-[272px] object-cover rounded"
-              />
+              <img src="./ressources/beerbar.webp" alt="Photo du Photobooth"
+                class="h-[320px] w-[272px] object-cover rounded" />
               <p class="mt-2">
                 Comme son voisin le Candy Bar, le Cocktail & Beer Bar est lui
                 dressée afin que chacun puisse se servir de divers brevages.
@@ -471,8 +399,7 @@
 
           <!-- #region CARD -->
           <div
-            class="swiper-slide min-h-[450px] w-80 flex flex-col shadow-md rounded-lg mt-7 px-6 py-4 text-left bg-yellow-200"
-          >
+            class="swiper-slide min-h-[450px] w-80 flex flex-col shadow-md rounded-lg mt-7 px-6 py-4 text-left bg-yellow-200">
             <!-- CARTE PART HAUT-->
             <div class="mb-5">
               <h2 class="text-2xl font-bold text-gray-900">Bar Livre d'or</h2>
@@ -484,11 +411,8 @@
 
             <!-- CARTE PART BAS-->
             <div class="flex flex-grow flex-col items-center">
-              <img
-                src="./ressources/goldbookbar.webp"
-                alt="Photo du Photobooth"
-                class="h-[320px] w-[272px] object-cover rounded"
-              />
+              <img src="./ressources/goldbookbar.webp" alt="Photo du Photobooth"
+                class="h-[320px] w-[272px] object-cover rounded" />
               <p class="mt-2">
                 Le dernier de l'équipe, le Bar livre d'or dressée afin que vos
                 invités puisse laisser une trace écrite durant vos évenements
@@ -505,118 +429,137 @@
       <div class="swiper-button-prev swiper-navBtn hover:text-blue-400" id="prev-prestation"></div>
       <div class="swiper-pagination swiper-pagination-prestation"></div>
     </div>
-</section>
-<!-- #endregion -->
-
-<div class="relative">
-  <img src="./ressources/chaise-bg.webp" alt="Illustration de chaise" class="absolute w-full object-cover top-0 z-0 overflow-hidden">
-</div>
-<!-- #region Témoignage -->
-<section id="realisations" class="mx-auto py-10 px-4">
-  <h2 class="font-['Amatic_SC'] text-5xl text-center">
-      Témoignages
-  </h2>
-  <p class="font-['Amatic_SC'] text-center text-2xl">Rejoignez-nous sur nos réseaux et laissez nous votre avis. </p>
-  <!-- #region Commentaire -->
-  <div class="w-full  h-48 mx-auto flex flew-col justify-around items-center sm:flex-row">
-
-    <div class="max-w-md px-4 py-4 text-black bg-yellow-200 rounded-lg shadow">
-      <div class="mb-2">
-        <div class="h-3 text-3xl text-left text-black">“</div>
-        <p class="px-4 text-sm text-center text-black italic">
-          Merci à vous pour votre professionnalisme, tout été parfait les cadres personnalisés étaient magnifiques
-        </p>
-        <div class="h-3 text-3xl text-right text-black">”</div>
-      </div>
-      <p class="text-right text-xs text-black">Manon Roque Gaullier</p>
-    </div>
-  </div>
+  </section>
   <!-- #endregion -->
-</section>
-<!-- #endregion -->
 
-<!-- #region Formulaire -->
-    <section id="contact" class="bg-gray-50 pb-32 md:pb-40">
-        <h2 class="text-center font-['Amatic_SC'] pt-10 text-5xl mb-2">Rentrons en contact</h2>
-        <!-- <p class="text-center font-['Amatic_SC'] pt-1 text-xl">Vous pouvez nous joindre directement au : 06 12 12 12 12</p> -->
+  <div class="relative">
+    <img src="./ressources/chaise-bg.webp" alt="Illustration de chaise"
+      class="absolute w-full object-cover top-0 z-0 overflow-hidden">
+  </div>
+  <!-- #region Témoignage -->
+  <section id="realisations" class="mx-auto py-10 px-4">
+    <h2 class="font-['Amatic_SC'] text-5xl text-center">
+      Témoignages
+    </h2>
+    <p class="font-['Amatic_SC'] text-center text-2xl">Rejoignez-nous sur nos réseaux et laissez nous votre avis. </p>
+    <!-- #region Commentaire -->
+    <div class="w-full  h-48 mx-auto flex flew-col justify-around items-center sm:flex-row">
 
-        <form action="https://formsubmit.co/guyliane@live.fr" method="POST" class="space-y-6 bg-white max-w-3xl mx-auto py-16 px-4 relative z-20 sm:px-6 lg:px-8 xl:px-12">
-
-            <div>
-                <label for="nom" class="text-gray-500 mb-2 block">Nom</label>
-                <input type="text" name="nom" id="nom" placeholder="Votre nom" class="w-full block ring-1 ring-gray-200 shadow-sm py-3 px-4 placeholder-gray-300 border border-gray-300 rounded-md" required>
-            </div>
-
-            <div>
-                <label for="prenom" class="text-gray-500 mb-2 block">Prénom</label>
-                <input type="text" name="prenom" id="prenom" placeholder="Votre prénom" class="w-full border block ring-1 ring-gray-200 shadow-sm py-3 px-4 placeholder-gray-300 border-gray-300 rounded-md" required>
-            </div>
-
-            <div>
-                <label for="mail" class="text-gray-500 mb-2 block">Mail</label>
-                <input type="email" name="email" id="mail" placeholder="Votre adresse mail" class="w-full block border ring-1 ring-gray-200 shadow-sm py-3 px-4 placeholder-gray-300 border-gray-300 rounded-md" required>
-            </div>
-
-            <div>
-                <label for="event" class="text-gray-500 mb-2 block">Evénement</label>
-                <input type="text" name="evenement" id="event" placeholder="Type d'événement" class="w-full border block ring-1 ring-gray-200 shadow-sm py-3 px-4 placeholder-gray-300 border-gray-300 rounded-md" required>
-            </div>
-
-            <div>
-                <label for="telephone" class="text-gray-500 mb-2 block">Téléphone</label>
-                <input type="number" name="telephone" id="telephone" placeholder="Votre numéro de téléphone" class="w-full border block ring-1 ring-gray-200 shadow-sm py-3 px-4 placeholder-gray-300 border-gray-300 rounded-md" required>
-            </div>
-
-            <div>
-                <label for="message" class="text-gray-500 mb-2 block">Message</label>
-                <textarea type="text"  name="message" id="message" placeholder="Votre message" class="w-full block border ring-1 ring-gray-200 shadow-sm py-3 px-4 placeholder-gray-300 border-gray-300 rounded-md" required></textarea>
-            </div>
-
-            <input type="hidden" name="_subject" value="Nouveau message depuis le site web !">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="https://regal-bublanina-eee316.netlify.app/thanks.html">
-
-            <button type="submit" role="button" class="py-3 px-6 border-transparent shadow-sm text-base font-medium rounded-md text-white bg-green-700">Envoyer</button>
-        </form>
-
-    </section>
+      <div class="max-w-md px-4 py-4 text-black bg-yellow-200 rounded-lg shadow">
+        <div class="mb-2">
+          <div class="h-3 text-3xl text-left text-black">“</div>
+          <p class="px-4 text-sm text-center text-black italic">
+            Merci à vous pour votre professionnalisme, tout été parfait les cadres personnalisés étaient magnifiques
+          </p>
+          <div class="h-3 text-3xl text-right text-black">”</div>
+        </div>
+        <p class="text-right text-xs text-black">Manon Roque Gaullier</p>
+      </div>
+    </div>
     <!-- #endregion -->
-    <div class="relative">
-        <img src="./ressources/ballon-bg.webp" alt="Illustration de ballon gonflable" class="absolute w-full object-cover bottom-0 z-10 overflow-hidden">
+  </section>
+  <!-- #endregion -->
+
+  <!-- #region Formulaire -->
+  <section id="contact" class="bg-gray-50 pb-32 md:pb-40">
+    <h2 class="text-center font-['Amatic_SC'] pt-10 text-5xl mb-2">Rentrons en contact</h2>
+    <!-- <p class="text-center font-['Amatic_SC'] pt-1 text-xl">Vous pouvez nous joindre directement au : 06 12 12 12 12</p> -->
+
+    <form action="https://formsubmit.co/b.evenement@hotmail.com" method="POST"
+      class="space-y-6 bg-white max-w-3xl mx-auto py-16 px-4 relative z-20 sm:px-6 lg:px-8 xl:px-12">
+
+      <div>
+        <label for="nom" class="text-gray-500 mb-2 block">Nom</label>
+        <input type="text" name="nom" id="nom" placeholder="Votre nom"
+          class="w-full block ring-1 ring-gray-200 shadow-sm py-3 px-4 placeholder-gray-300 border border-gray-300 rounded-md"
+          required>
+      </div>
+
+      <div>
+        <label for="prenom" class="text-gray-500 mb-2 block">Prénom</label>
+        <input type="text" name="prenom" id="prenom" placeholder="Votre prénom"
+          class="w-full border block ring-1 ring-gray-200 shadow-sm py-3 px-4 placeholder-gray-300 border-gray-300 rounded-md"
+          required>
+      </div>
+
+      <div>
+        <label for="mail" class="text-gray-500 mb-2 block">Mail</label>
+        <input type="email" name="email" id="mail" placeholder="Votre adresse mail"
+          class="w-full block border ring-1 ring-gray-200 shadow-sm py-3 px-4 placeholder-gray-300 border-gray-300 rounded-md"
+          required>
+      </div>
+
+      <div>
+        <label for="event" class="text-gray-500 mb-2 block">Evénement</label>
+        <input type="text" name="evenement" id="event" placeholder="Type d'événement"
+          class="w-full border block ring-1 ring-gray-200 shadow-sm py-3 px-4 placeholder-gray-300 border-gray-300 rounded-md"
+          required>
+      </div>
+
+      <div>
+        <label for="telephone" class="text-gray-500 mb-2 block">Téléphone</label>
+        <input type="number" name="telephone" id="telephone" placeholder="Votre numéro de téléphone"
+          class="w-full border block ring-1 ring-gray-200 shadow-sm py-3 px-4 placeholder-gray-300 border-gray-300 rounded-md"
+          required>
+      </div>
+
+      <div>
+        <label for="message" class="text-gray-500 mb-2 block">Message</label>
+        <textarea type="text" name="message" id="message" placeholder="Votre message"
+          class="w-full block border ring-1 ring-gray-200 shadow-sm py-3 px-4 placeholder-gray-300 border-gray-300 rounded-md"
+          required></textarea>
+      </div>
+
+      <input type="hidden" name="_subject" value="Nouveau message depuis le site web !">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://regal-bublanina-eee316.netlify.app/thanks.html">
+
+      <button type="submit" role="button"
+        class="py-3 px-6 border-transparent shadow-sm text-base font-medium rounded-md text-white bg-green-700">Envoyer</button>
+    </form>
+
+  </section>
+  <!-- #endregion -->
+  <div class="relative">
+    <img src="./ressources/ballon-bg.webp" alt="Illustration de ballon gonflable"
+      class="absolute w-full object-cover bottom-0 z-10 overflow-hidden">
+  </div>
+
+  <!-- #region FOOTER -->
+  <!-- Footer -->
+
+  <footer class="bg-lime-300 py-5">
+
+    <h3 class="text-3xl pb-5 text-center font-extrabold text-black">Retrouvez-nous ici</h3>
+
+    <div class="mb-5 flex space-x-6 justify-center text-black">
+
+      <a href="https://www.facebook.com/BEvenement-109789048279221" target="_blank">
+        <img src="ressources/fb.svg" alt="icône fb" class="w-20 h-20">
+      </a>
+
+      <a href="https://instagram.com/b.evenement41?igshid=YmMyMTA2M2Y=" target="_blank">
+        <img src="ressources/instagram.svg" alt="icône instagram" class="w-20 h-20">
+      </a>
+
     </div>
 
-<!-- #region FOOTER -->
-    <!-- Footer -->
 
-     <footer class="bg-lime-300 py-5">
+    <p class="text-center uppercase mt-8 text-base text-black md:mt-0">&copy; 2022 Site & graphisme réalisé par
+      Dauphinri </p>
+    <p class="text-center text-black hover:text-green-800"><a href="/mention.html" target="_blank">Mentions Légals</a>
+    </p>
+    <img class="w-12 mx-auto" src="./ressources/FrogLogo.svg" alt="logo dauphinri">
 
-        <h3 class="text-3xl pb-5 text-center font-extrabold text-black">Retrouvez-nous ici</h3>
-  
-        <div class="mb-5 flex space-x-6 justify-center text-black">
-  
-          <a href="https://www.facebook.com/BEvenement-109789048279221" target="_blank">
-            <img src="ressources/fb.svg" alt="icône fb" class="w-20 h-20">
-          </a>
-        
-          <a href="https://instagram.com/b.evenement41?igshid=YmMyMTA2M2Y=" target="_blank">
-            <img src="ressources/instagram.svg" alt="icône instagram" class="w-20 h-20">
-          </a>
-  
-        </div>
+  </footer>
+  <!-- #endregion -->
 
-  
-        <p class="text-center uppercase mt-8 text-base text-black md:mt-0">&copy; 2022 Site & graphisme réalisé par Dauphinri </p>
-        <p class="text-center text-black hover:text-green-800"><a href="/mention.html" target="_blank">Mentions Légals</a></p>
-        <img class="w-12 mx-auto" src="./ressources/FrogLogo.svg" alt="logo dauphinri">
-  
-      </footer>
-<!-- #endregion -->
+  <script src="swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+  <script src="app.js"></script>
+</body>
 
-    <script src="swiper-bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
-    <script src="app.js"></script>
-  </body>
 </html>
 
 <!-- Made by 🐸 -->
